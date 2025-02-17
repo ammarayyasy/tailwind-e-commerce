@@ -1,3 +1,5 @@
+const colors = require("tailwindcss/colors");
+
 module.exports = {
   purge: [],
   darkMode: false, // or 'media' or 'class'
@@ -16,6 +18,9 @@ module.exports = {
       fontFamily: {
         poppins: "'Poppins', sans-serif",
         roboto: "'Roboto', sans-serif",
+      },
+      colors: {
+        primary: "#FD3D57",
       }
     },
   },
