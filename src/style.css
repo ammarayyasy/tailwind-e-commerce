@@ -12,3 +12,13 @@
         @apply font-roboto
     }
 }
+
+@layer components{
+    .size-components input:checked + label{
+        @apply bg-primary text-white
+    }
+
+    .color-components input:checked + label{
+        @apply ring-2 ring-primary
+    }
+}
