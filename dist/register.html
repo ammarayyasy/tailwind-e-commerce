@@ -124,27 +124,34 @@
     <!-- login form -->
     <div class="container py-16">
         <div class="max-w-lg mx-auto shadow px-6 py-7 rounded overflow-hidden">
-            <h2 class="uppercase text-2xl font-medium mb-1">login</h2>
-            <p class="text-gray-600 text-sm mb-6">Login if tou are returning customer</p>
+            <h2 class="uppercase text-2xl font-medium mb-1">create an account</h2>
+            <p class="text-gray-600 text-sm mb-6">Register here if you don't have an account</p>
             <form action="">
                 <div class="space-y-4">
+                    <div>
+                        <label class="text-gray-600 mb-2 block">Fullname <span class="text-primary">*</span></label>
+                        <input type="email" class="block w-full border border-gray-300 px-4 py-3 text-gray-600 text-sm rounded focus:border-primary focus:ring-0 placeholder-gray-400" placeholder="John Doe">
+                    </div>
                     <div>
                         <label class="text-gray-600 mb-2 block">Email address <span class="text-primary">*</span></label>
                         <input type="email" class="block w-full border border-gray-300 px-4 py-3 text-gray-600 text-sm rounded focus:border-primary focus:ring-0 placeholder-gray-400" placeholder="example@mail.com">
                     </div>
                     <div>
-                        <label class="text-gray-600 mb-2 block">Email address <span class="text-primary">*</span></label>
-                        <input type="email" class="block w-full border border-gray-300 px-4 py-3 text-gray-600 text-sm rounded focus:border-primary focus:ring-0 placeholder-gray-400" placeholder="example@mail.com">
+                        <label class="text-gray-600 mb-2 block">Password <span class="text-primary">*</span></label>
+                        <input type="password" class="block w-full border border-gray-300 px-4 py-3 text-gray-600 text-sm rounded focus:border-primary focus:ring-0 placeholder-gray-400" placeholder=password">
+                    </div>
+                    <div>
+                        <label class="text-gray-600 mb-2 block">Confirm password <span class="text-primary">*</span></label>
+                        <input type="password" class="block w-full border border-gray-300 px-4 py-3 text-gray-600 text-sm rounded focus:border-primary focus:ring-0 placeholder-gray-400" placeholder="password">
                     </div>
                     <div class="flex items-center justify-between">
                         <div class="flex items-center">
                             <input class="text-primary focus:ring-0 rounded-sm cursor-pointer" type="checkbox" id="agreement">
-                            <label class="text-gray-600 ml-3 cursor-pointer" for="agreement">Remember me</label>
+                            <label class="text-gray-600 ml-3 cursor-pointer" for="agreement">I have read and agree to the <a href="" class="text-primary">terms and conditions</a> </label>
                         </div>
-                        <a href="" class="text-primary">Forgot password</a>
                     </div>
                     <div class="mt-4">
-                        <button type="submit" class="bg-primary block w-full text-center text-white py-2 border border-primary hover:bg-transparent hover:text-primary rounded uppercase font-roboto font-medium transition">login</button>
+                        <button type="submit" class="bg-primary block w-full text-center text-white py-2 border border-primary hover:bg-transparent hover:text-primary rounded uppercase font-roboto font-medium transition">register</button>
                     </div>
                 </div>
             </form>
@@ -162,7 +169,7 @@
                 </a>
             </div>
             <!-- login with end -->
-            <p class="mt-4 text-gray-600 text-center">Dont have account? <a href="register.html" class="text-primary">Register now</a></p>
+            <p class="mt-4 text-gray-600 text-center">Already have an account? <a href="login.html" class="text-primary">Login now</a></p>
         </div>
     </div>
     <!-- login form end -->
