@@ -1,5 +1,3 @@
-const colors = require("tailwindcss/colors");
-
 module.exports = {
   purge: [],
   darkMode: false, // or 'media' or 'class'
@@ -16,16 +14,19 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        poppins: "'Poppins', sans-serif",
+        poppins:  "'Poppins', serif",
         roboto: "'Roboto', sans-serif",
       },
       colors: {
-        primary: "#FD3D57",
+        primary: '#FD3D57',
       }
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      display: ['group-hover'],
+      visibility: ['group-hover']
+    },
   },
   plugins: [
     require('@tailwindcss/forms'),

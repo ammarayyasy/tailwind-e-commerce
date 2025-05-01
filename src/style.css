@@ -8,21 +8,19 @@
     body{
         @apply font-poppins
     }
-    h1,h2,h3,h4,h5,h5{
+    h1,h2,h3,h4,h5,h6{
         @apply font-roboto
     }
 }
 
 @layer components{
-    .size-components input:checked + label{
-        @apply bg-primary text-white
+    .size-selector input:checked + label{
+        @apply bg-primary text-white;
     }
-
-    .color-components input:checked + label{
-        @apply ring-2 ring-primary
+    .color-selector input:checked + label{
+        @apply ring-2 ring-primary;
     }
-
     .input-box{
-        @apply block w-full border border-gray-300 px-4 py-3 text-sm text-gray-600 focus:border-primary focus:ring-0 rounded
+        @apply block w-full border border-gray-300 px-4 py-3 text-gray-600 text-sm rounded focus:border-primary focus:ring-0 placeholder-gray-300
     }
 }
