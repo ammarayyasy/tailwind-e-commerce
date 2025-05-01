@@ -1,4 +1,8 @@
 module.exports = {
+  content: [
+    './src/**/*.{html,js}', // file sumber
+    './dist/index.html',    // kalau index.html ditulis langsung
+  ],
   purge: [],
   darkMode: false, // or 'media' or 'class'
   theme: {
